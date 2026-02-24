@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LaBelle Bakery</title>
+  <meta name="description" content="Fresh cookies, pastries, and cakes baked daily at LaBelle Bakery.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="../scripts/favicon.svg">
+
+  <style>
+    /* ===== Base Styles ===== */
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("../scripts/background.svg");
+      background-size: 200px;
+      background-repeat: repeat;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    main{
+      flex: 1;
+    }
+
+    /* ===== Layout ===== */
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* ===== Header ===== */
+    .site-header {
+      background-color: #ff90d6;
+      padding: 20px 0;
+    }
+
+    .brand {
+      margin: 0;
+      color: #441c2d;
+    }
+
+    /* ===== Navigation ===== */
+    .nav a {
+      text-decoration: none;
+      color: #441c2d;
+      margin-left: 25px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #c2185b;
+    }
+
+    /* ===== Footer ===== */
+    .site-footer {
+      background-color: #ff90d6;
+      padding: 15px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">
+        <img src="../scripts/logo.svg" alt="LaBelle Bakery Logo" width="150" height="150" style="vertical-align: middle; margin-right: 10px;">
+      </h1>
+      <nav class="nav">
+        <a href="../pages/about_page.html">About</a>
+        <a href="../pages/menu_page.html">Menu</a>
+        <a href="../pages/contact_page.html">Contact</a>
+        <a href="../pages/specials_page.html">Specials</a>
+        <a href="../pages/order_pages.html">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div>
+          <h2>Freshly baked every morning</h2>
+          <p>Baked fresh every morning, from local ingredients sourced daily.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="container menu-section">
+      <div>
+        <h3>Featured</h3>
+        <div class="menu-grid">
+          <article class="card">
+            <div class="card-media" aria-hidden="true"></div>
+            <h4><a href="#cookies">Cookies</a></h4>
+          </article>
+
+          <article class="card">
+            <div class="card-media" aria-hidden="true"></div>
+            <h4>Croissant</h4>
+            <p>Buttery, layered, and flaky perfection.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-media" aria-hidden="true"></div>
+            <h4>Chocolate Tart</h4>
+            <p>Rich dark chocolate with a crisp crust.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about-section">
+      <div>
+        <h3>About Us</h3>
+        <p>
+          LaBelle Bakery is a family-owned bakery serving the neighborhood since 1998.
+          We bake with locally sourced ingredients and traditional techniques.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact-section">
+      <div>
+        <h3>Contact</h3>
+        <p>
+          Visit us: 123 Morning Lane<br>
+          Hours: Mon–Sat 7am–3pm
+        </p>
+        <p>Email: hello@LaBellebakery.example</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© LaBelle Bakery — Fresh every day.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
