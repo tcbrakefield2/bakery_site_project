@@ -1,1 +1,0 @@
-# bakery_site_project
