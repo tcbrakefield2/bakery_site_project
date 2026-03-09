@@ -1,0 +1,157 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("../styles/background.svg");
+  background-size: 200px;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Header */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header {
+  background-color: #ff90d6;
+  padding: 20px 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #441c2d;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #c2185b;
+}
+
+.card {
+  background-color: #f7edd1;
+  border: none;
+}
+
+.site-footer {
+  background-color: #ff90d6;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.order-summary {
+  background-color: #f7edd1; 
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  position: sticky; 
+  top: 20px;        
+}
+
+.special-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+.special-badge.weekly {
+  background-color: #c2185b; 
+}
+
+.special-badge.seasonal {
+  background-color: #ff90d6; 
+  color: #441c2d; 
+}
+
+.special-badge.weekend {
+  background-color: #4caf50; 
+}
+
+.special-badge.morning {
+  background-color: #ffb74d; 
+}
+
+.special-badge.family {
+  background-color: #2196f3; 
+}
+
+body.login-page {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  height: 100vh;            
+}
+
+.login-card {
+      background-color: #f7edd1;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-card h2 {
+      text-align: center;
+      color: #441c2d;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-login {
+      background-color: #ff90d6;
+      border: none;
+      color: #441c2d;
+      font-weight: bold;
+    }
+
+    .btn-login:hover {
+      background-color: #c2185b;
+      color: #fff;
+    }
+
+    .slideshow {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.slideshow img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow-wrapper {
+  width: 600px;           /* fixed width */
+  height: 400px;          /* fixed height */
+  margin: 0 auto;         /* center on page */
+  overflow: hidden;       /* hide overflow from larger images */
+  border-radius: 10px;    /* optional rounding */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* Images inside container */
+.slideshow-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* ensures the image fills the container without stretching */
+  transition: opacity 1s ease-in-out;
+  display: block;
+}
