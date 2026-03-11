@@ -11,8 +11,10 @@ if(orderLink){
     }
       else if (!loggedIn) {
       window.location.href = "login-page.html";
+      }
   });
 }
+
 
 
 
