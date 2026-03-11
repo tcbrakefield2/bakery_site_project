@@ -29,4 +29,5 @@ So that I can order what I want from the bakery.
 - Repo: <https://github.com/tcbrakefield2/bakery_site_project-main>
 - Deployed: <https://tcbrakefield2.github.io/bakery_site_project/index.html>
 - Verification: Tested on Chrome (desktop), Safari (iOS); responsive on mobile and desktop
-  -![alt text](67325.jpg) ![alt text](54558.jpg) ![alt text](32169.jpg) ![alt text](95342.jpg)
+  -![Phone example](67325.jpg) ![Phone example](54558.jpg) ![Phone example](32169.jpg) ![Phone example](95342.jpg)
+
