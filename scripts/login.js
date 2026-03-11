@@ -5,11 +5,12 @@
     
     const loggedIn = false; 
     if(loggedIn) {
-      window.location.href = '/pages/order-page.html';
+      window.location.href = 'pages/order-page.html';
     }
     else if (!loggedIn) {
-      window.location.href = '/pages/login-page.html';
+      window.location.href = 'pages/login-page.html';
     }
     
 
   });
+
