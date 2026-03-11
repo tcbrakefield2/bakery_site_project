@@ -6,14 +6,12 @@ if(orderLink){
     
     const loggedIn = false; 
     
-    if(loggedIn) {
-      window.location.href = "order-page.html";
-    }
-    else if (!loggedIn) {
-      window.location.href = "login-page.html";
-    }
+    const prefix = window.location.pathname.includes('/pages/') ? '' : 'pages/';
+
+    window.location.href = prefix + (loggedIn ? 'order-page.html' : 'login-page.html');
   });
 }
+
 
 
 
