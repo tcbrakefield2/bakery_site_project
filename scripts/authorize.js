@@ -23,7 +23,7 @@ if(orderLink){
   orderLink.addEventListener("click", function(event){
     if(sessionStorage.getItem("loggedIn") !== "true"){
       event.preventDefault();
-      window.location.href = "../pages/login-page.html";
+      window.location.href = "order-page.html";
     }
   });
 }
@@ -36,3 +36,4 @@ if(logoutBtn){
   });
 
 }
+
