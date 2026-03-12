@@ -10,7 +10,7 @@ if(loginForm){
     const password = document.getElementById("password").value;
 
     if(password === "bakery123"){
-      localStorage.setItem("loggedIn", "true");
+      sessionStorage.setItem("loggedIn", "true");
       window.location.href = "../pages/order-page.html";
     } else {
       alert("Incorrect password");
@@ -21,7 +21,7 @@ if(loginForm){
 // order link protection
 if(orderLink){
   orderLink.addEventListener("click", function(event){
-    if(localStorage.getItem("loggedIn") !== "true"){
+    if(sessionStorage.getItem("loggedIn") !== "true"){
       event.preventDefault();
       window.location.href = "../pages/login-page.html";
     }
@@ -31,7 +31,8 @@ if(orderLink){
 // logout button
 if(logoutBtn){
   logoutBtn.addEventListener("click", function(){
-    localStorage.removeItem("loggedIn");
+    sessionStorage.removeItem("loggedIn");
     window.location.href = "../pages/login-page.html";
   });
+
 }
