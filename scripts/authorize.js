@@ -11,7 +11,7 @@ if(loginForm){
 
     if(password === "bakery123"){
       sessionStorage.setItem("loggedIn", "true");
-      window.location.href = "../pages/order-page.html";
+      window.location.href = "bakery_site_project/pages/order-page.html";
     } else {
       alert("Incorrect password");
     }
@@ -36,5 +36,6 @@ if(logoutBtn){
   });
 
 }
+
 
 
